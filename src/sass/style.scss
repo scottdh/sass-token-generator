@@ -1,13 +1,10 @@
-@use "./reset";
-@use "./fluid-type-scale";
-@use "./typography";
+@use "./design-tokens/generator";
+@use "./design-tokens/breakpoints";
 
-/* Utilities */
-@use "./utilities/flow";
-@use "./utilities/wrapper";
-
-/* Components */
-@use "./components/card";
-
-@import "./config";
-@import "../../node_modules/gorko/gorko.scss";
+body {
+  color: var(--color-text-primary);
+  background-color: var(--color-z0);
+  font-family: var(--ff-sans);
+  font-size: var(--s-400);
+  line-height: var(--lh-regular);
+}
